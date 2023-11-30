@@ -44,6 +44,7 @@ public:
 };
 
 
+
 int main() 
 {
     vector<Person*> people;
