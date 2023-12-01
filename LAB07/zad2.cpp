@@ -8,3 +8,11 @@ uruchom ponownie program. Zaobserwuj co się dzieje w przypadku nie przechwycone
 */
 
 
+
+
+
+
+
+
+
+
