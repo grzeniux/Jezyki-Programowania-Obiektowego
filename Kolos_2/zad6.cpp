@@ -48,8 +48,8 @@ public:
 	Rectangle(float x, float y, float width, float height)
     : Figure(x, y), m_width{width}, m_height{height} {}
 
-    float get_width(void)  { return m_width; }
-    float get_height(void)  { return m_height; }
+    float get_width(void) const { return m_width; }
+    float get_height(void) const { return m_height; }
 
     void set_width(float width) { m_width = width; }
     void set_height(float height) { m_height = height; }
@@ -80,19 +80,24 @@ public:
 };
 
 int main(){
+float p1_x, p1_y, p2_x, p2_y, p3_x, p3_y, p4_x, p4_y;
 
 Rectangle R1(1.0, 2.0, 3.0, 4.0);
 
     cout << "Poczatkowe wspolrzedne: (" << R1.get_x() << ", " << R1.get_y() << ")\n";
-    cout << "Width: " << R1.get_width() << ", Height: " << R1.get_height() << "\n";
 
+ 	R1.rogi(p1_x, p1_y, p2_x, p2_y, p3_x, p3_y, p4_x, p4_y);
+    cout << "Corner 1: (" << p1_x << ", " << p1_y << ")\n";
+    cout << "Corner 2: (" << p2_x << ", " << p2_y << ")\n";
+    cout << "Corner 3: (" << p3_x << ", " << p3_y << ")\n";
+    cout << "Corner 4: (" << p4_x << ", " << p4_y << ")\n";
+
+	// Wymiary prostokata
+    cout << "Width: " << R1.get_width() << ", Height: " << R1.get_height() << "\n"<<endl;
     R1.move(2.0, 3.0);
     cout << "Nowe wspolrzedne (" << R1.get_x() << ", " << R1.get_y() << ")\n";
 
-
-float p1_x, p1_y, p2_x, p2_y, p3_x, p3_y, p4_x, p4_y;
     R1.rogi(p1_x, p1_y, p2_x, p2_y, p3_x, p3_y, p4_x, p4_y);
-
     cout << "Corner 1: (" << p1_x << ", " << p1_y << ")\n";
     cout << "Corner 2: (" << p2_x << ", " << p2_y << ")\n";
     cout << "Corner 3: (" << p3_x << ", " << p3_y << ")\n";
