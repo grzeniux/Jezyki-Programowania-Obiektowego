@@ -61,7 +61,7 @@ public:
     }
 
 
-
+	//Dodatkowo wyliczanie wspolrzednych prostokata
 	void rogi(float& p1_x, float& p1_y, float& p2_x, float& p2_y, float& p3_x, float& p3_y, float& p4_x, float& p4_y) const
     {
         p1_x = get_x();
@@ -82,18 +82,17 @@ public:
 int main(){
 float p1_x, p1_y, p2_x, p2_y, p3_x, p3_y, p4_x, p4_y;
 
-Rectangle R1(1.0, 2.0, 3.0, 4.0);
-
+Rectangle R1(4.0, 2.0, 3.0, 4.0);	// x,y,szerokosc,wysokosc
+    cout << "Width: " << R1.get_width() << ", Height: " << R1.get_height() << "\n"<<endl;
     cout << "Poczatkowe wspolrzedne: (" << R1.get_x() << ", " << R1.get_y() << ")\n";
 
  	R1.rogi(p1_x, p1_y, p2_x, p2_y, p3_x, p3_y, p4_x, p4_y);
     cout << "Corner 1: (" << p1_x << ", " << p1_y << ")\n";
     cout << "Corner 2: (" << p2_x << ", " << p2_y << ")\n";
     cout << "Corner 3: (" << p3_x << ", " << p3_y << ")\n";
-    cout << "Corner 4: (" << p4_x << ", " << p4_y << ")\n";
+    cout << "Corner 4: (" << p4_x << ", " << p4_y << ")\n\n";
 
 	// Wymiary prostokata
-    cout << "Width: " << R1.get_width() << ", Height: " << R1.get_height() << "\n"<<endl;
     R1.move(2.0, 3.0);
     cout << "Nowe wspolrzedne (" << R1.get_x() << ", " << R1.get_y() << ")\n";
 
