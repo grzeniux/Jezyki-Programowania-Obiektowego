@@ -32,8 +32,8 @@ class Figure
 	public:
 		Figure(float x,float y) : m_x{x},m_y{y} {}
 
-		float get_x(void) const { return m_x; }
-		float get_y(void) const { return m_y; }
+		float get_x(void) const { return m_x; }		// warto dawac const!!!
+		float get_y(void) const { return m_y; }		// warto dawac const!!!
 		void set_x(float x) { m_x=x; }
 		void set_y(float y) { m_y=y; }
 };
@@ -48,8 +48,8 @@ public:
 	Rectangle(float x, float y, float width, float height)
     : Figure(x, y), m_width{width}, m_height{height} {}
 
-    float get_width(void) const { return m_width; }
-    float get_height(void) const { return m_height; }
+    float get_width(void) const { return m_width; }		// warto dawac const!!!
+    float get_height(void) const { return m_height; }	// warto dawac const!!!
 
     void set_width(float width) { m_width = width; }
     void set_height(float height) { m_height = height; }
