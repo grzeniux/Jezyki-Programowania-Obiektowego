@@ -6,9 +6,7 @@ jak i wtedy gdy jest czytanie na odwrÃ³t.
 Na przyk³ad s³owa owocowo, radar, sedes s¹ palindromami, zaœ s³owa dom oraz komputer - nie s¹ 
 Program powinien sprawdzaæ czy wprowadzone s³owo jest palindromem, za pomoc¹ funkcji rekurencyjnej (3 pkt)
 */
-
 #include <iostream>
-
 using namespace std;
 
 bool palindrome(string text)
