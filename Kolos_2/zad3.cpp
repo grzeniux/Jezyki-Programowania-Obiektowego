@@ -1,5 +1,5 @@
 /*
-Jaki bƒôdzie wynik dzia≈Çania poni≈ºszego programu? (2pkt)
+Jaki bÍdzie wynik dzia≥ania poniøszego programu? (2pkt)
 */
 #include <iostream>
 using namespace std;
@@ -27,11 +27,10 @@ int main()
 }
 
 /*
-wska≈∫nik bp typu Base*, kt√≥ry wskazuje na obiekt klasy Derived.
-Wywo≈Çuje metodƒô show1 dla obiektu wskazywanego przez bp. 
-Poniewa≈º show1 jest oznaczona jako virtual, zostanie u≈ºyta implementacja z klasy pochodnej Derived.
+wskaünik bp typu Base*, ktÛry wskazuje na obiekt klasy Derived.
+Wywo≥uje metodÍ show1 dla obiektu wskazywanego przez bp. 
+Poniewaø show1 jest oznaczona jako virtual, zostanie uøyta implementacja z klasy pochodnej Derived.
 
-Wywo≈Çuje metodƒô show2 dla obiektu wskazywanego przez bp. 
-Tutaj wywo≈Çana zostanie implementacja z klasy bazowej Base, poniewa≈º show2 nie jest oznaczona jako virtual.
+Wywo≥uje metodÍ show2 dla obiektu wskazywanego przez bp. 
+Tutaj wywo≥ana zostanie implementacja z klasy bazowej Base, poniewaø show2 nie jest oznaczona jako virtual.
 */
-
