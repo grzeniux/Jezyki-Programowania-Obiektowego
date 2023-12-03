@@ -12,7 +12,6 @@ wspolczynnika TF dla kzadego wprowadzonego wczesniej wyrazu (dla wyrazu "koniec"
 #include <iostream>
 #include <map>
 #include <string>
-
 using namespace std;
 
 int main()
