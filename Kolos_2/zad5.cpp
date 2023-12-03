@@ -1,37 +1,17 @@
 /*
-5. Na poprzednim kolokwium utworzyliÅ›my klasÄ™ Fraction reprezentujÄ…cÄ… liczbÄ™ wymiernÄ…. Ma ona w uproszczeniu nastÄ™pujÄ…cÄ… postaÄ‡:
-class Fraction 
-{
-	private:
-		int m_num;  //licznik
-		int m_den;  //mianownik
-	public:
-		Fraction(int nominator = 0, int denominator = 0): m_num{nominator}, m_den{denominator}{}
-		int get_num(void) const { return m_num; }
-		int get_den(void) const { return m_den; }
-
-		void set_num(int num) { m_num = num; }
-		void set_den(int den) { m_den = den; }
-};
-
-Dla klasy Fraction napisz funkcje operatorowe: dodawania, postinkrementacji oraz wyjÅ›cia
-
+5. Na poprzednim kolokwium utworzyliœmy klasê Fraction reprezentuj¹c¹ liczbê wymiern¹. Ma ona w uproszczeniu nastêpuj¹c¹ postaæ:
+Dla klasy Fraction napisz funkcje operatorowe: dodawania, postinkrementacji oraz wyjœcia
 */
 
-
 #include <iostream>
-
 using namespace std;
-
-class Fraction
-{
+class Fraction{
 private:
     int m_num;
     int m_den;
 
 public:
-    Fraction (int numerator = 0, int denumerator = 0)
-    {
+    Fraction (int numerator = 0, int denumerator = 0) {
         m_num = numerator;
         m_den = denumerator;
     }
@@ -42,8 +22,7 @@ public:
     void set_num(int num) { m_num = num; }
     void set_den(int den) { m_den = den; }
 
-    Fraction operator++ (int)     //post-inkrementacja
-    {
+    Fraction operator++ (int) {    //post-inkrementacja
         Fraction temp = *this;
         ++this -> m_num;
         ++this -> m_den;
@@ -51,13 +30,10 @@ public:
     }
 };
 
-Fraction operator+ (const Fraction& lhs, const Fraction& rhs)   //operator dodawania
-{
+Fraction operator+ (const Fraction& lhs, const Fraction& rhs){   //operator dodawania
     return Fraction(lhs.get_num() + rhs.get_num(), lhs.get_den() + rhs.get_den());
 }
-
-ostream& operator<< ( ostream& out, const Fraction& rhs )   // operator wyjÅ›cia
-{
+ostream& operator<< ( ostream& out, const Fraction& rhs ){   // operator wyjÅ›cia
     out << rhs.get_num() << "/" << rhs.get_den();
     return out;
 }

@@ -1,5 +1,5 @@
 /*
-Dana jest klasa Figure, ktÃ³ra reprezentuje figure geometrycznÄ… na pÅ‚aszczyÅºnie:
+Dana jest klasa Figure, która reprezentuje figure geometryczn¹ na p³aszczyŸnie:
 class Figure
 {
 	private:
@@ -14,15 +14,14 @@ class Figure
 		void set_y(float y) { m_y=y; }
 };
 
-Napisz klasÄ™ Rectangle reprezentujÄ…cÄ… prostokÄ…t i dziedziczÄ…cÄ… klasy Figure. 
-Klasa Rectangle powinna dodatkowo zawieraÄ‡: 
-* pola reprezentujÄ…ce wysokoÅ›Ä‡ i szerokoÅ›Ä‡ prostokÄ…ta, 
-* konstruktor umoÅ¼liwiajÄ…cy zainicjowanie wszystkich jego pÃ³l, 
-* funkcje void move(float vx, float vy) umoÅ¼liwiajÄ…cÄ… przesuniÄ™cie prostokÄ…ta o wektor [Vx, Vy] (3 pkt)
+Napisz klasê Rectangle reprezentuj¹c¹ prostok¹t i dziedzicz¹c¹ klasy Figure. 
+Klasa Rectangle powinna dodatkowo zawieraæ: 
+* pola reprezentuj¹ce wysokoœæ i szerokoœæ prostok¹ta, 
+* konstruktor umo¿liwiaj¹cy zainicjowanie wszystkich jego pól, 
+* funkcje void move(float vx, float vy) umo¿liwiaj¹c¹ przesuniêcie prostok¹ta o wektor [Vx, Vy] (3 pkt)
 */
 #include <iostream>
 using namespace std;
-
 class Figure
 {
 	private:
@@ -37,7 +36,6 @@ class Figure
 		void set_x(float x) { m_x=x; }
 		void set_y(float y) { m_y=y; }
 };
-
 
 class Rectangle : public Figure {
 private:
@@ -59,7 +57,6 @@ public:
         set_x(get_x() + vx);
         set_y(get_y() + vy);
     }
-
 
 	//Dodatkowo wyliczanie wspolrzednych prostokata
 	void rogi(float& p1_x, float& p1_y, float& p2_x, float& p2_y, float& p3_x, float& p3_y, float& p4_x, float& p4_y) const
@@ -101,6 +98,5 @@ Rectangle R1(4.0, 2.0, 3.0, 4.0);	// x,y,szerokosc,wysokosc
     cout << "Corner 2: (" << p2_x << ", " << p2_y << ")\n";
     cout << "Corner 3: (" << p3_x << ", " << p3_y << ")\n";
     cout << "Corner 4: (" << p4_x << ", " << p4_y << ")\n";
-
     return 0;
 }
