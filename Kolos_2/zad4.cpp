@@ -1,6 +1,4 @@
-/*
-Przyjmij, ze masz dane dwa wektory liczb typu double. Napisz funkcje, ktoras zwraca iloczyn skalarny tych wektorow. (2 pkt)
-*/
+/* Przyjmij, ze masz dane dwa wektory liczb typu double. Napisz funkcje, ktoras zwraca iloczyn skalarny tych wektorow. (2 pkt) */
 #include <iostream>
 #include <vector>
 using namespace std;

@@ -1,10 +1,10 @@
 /*
-Dany jest wektor v liczb caÅ‚kowitych. Napisz wyraÅ¼enie (jedno dla kaÅ¼dego punktu), ktÃ³re:
-a) przypisze pierwszemu elementowi wektora wartoÅ›Ä‡ -1,
-b) przypisze przedstawionemu elementowi wartoÅ›Ä‡ wektora 1,
-c) wstawi do wektora nowÄ… wartoÅ›Ä‡ 5 na trzecim miejscu, liczÄ…c od poczÄ…tku,
-d) usunie Å›rodkowy element wektora (przyjmij, Å¼e w wektorze jest nieparzysta liczba elementÃ³w),
-e) przyjmie logicznÄ… wartoÅ›Ä‡ true w przypadku, gdy wektor jest pusty (5 pkt)
+Dany jest wektor v liczb ca³kowitych. Napisz wyra¿enie (jedno dla ka¿dego punktu), które:
+a) przypisze pierwszemu elementowi wektora wartoœæ -1,
+b) przypisze przedstawionemu elementowi wartoœæ wektora 1,
+c) wstawi do wektora now¹ wartoœæ 5 na trzecim miejscu, licz¹c od pocz¹tku,
+d) usunie œrodkowy element wektora (przyjmij, ¿e w wektorze jest nieparzysta liczba elementów),
+e) przyjmie logiczn¹ wartoœæ true w przypadku, gdy wektor jest pusty (5 pkt)
 */
 #include <iostream>
 #include <vector>
