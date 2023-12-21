@@ -1,18 +1,5 @@
 /*
 Dana jest klasa Figure, która reprezentuje figure geometryczn¹ na p³aszczyŸnie:
-class Figure
-{
-	private:
-		float m_x;
-		float m_y;
-
-	public:
-		Figure(float x,float y) : m_x{x},m_y{y} {}
-		float get_x(void) { return m_x; }
-		float get_y(void) { return m_y; }
-		void set_x(float x) { m_x=x; }
-		void set_y(float y) { m_y=y; }
-};
 
 Napisz klasê Rectangle reprezentuj¹c¹ prostok¹t i dziedzicz¹c¹ klasy Figure. 
 Klasa Rectangle powinna dodatkowo zawieraæ: 
